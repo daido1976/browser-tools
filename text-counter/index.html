@@ -3,9 +3,15 @@
   <head>
     <title>文字数カウンター</title>
     <link rel="stylesheet" type="text/css" href="/text-counter/index.css" />
+    <link rel="stylesheet" type="text/css" href="/shared/header.css" />
   </head>
   <body>
-    <div id="header"></div>
+    <!-- Header -->
+    <a href="/">
+      <header>Browser tools</header>
+    </a>
+    <!-- Header -->
+
     <h1>文字数カウンター</h1>
     <textarea
       id="inputText"
@@ -30,6 +36,5 @@
     <label for="htmlSwitch">HTMLタグをカウントしない: </label>
     <input type="checkbox" id="htmlSwitch" />
     <script src="/text-counter/index.js" type="module"></script>
-    <script src="/shared/load-components.js"></script>
   </body>
 </html>
