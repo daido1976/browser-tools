@@ -5,13 +5,14 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
+    <div id="header"></div>
     <h1>文字数カウンター</h1>
     <textarea
       id="inputText"
       placeholder="ここにテキストを入力してください"
       rows="10"
     ></textarea>
-    <h2>現在の文字数</h3>
+    <h2>現在の文字数</h2>
     <ul>
       <li>
         空白と改行をふくむ文字数:
@@ -29,5 +30,6 @@
     <label for="htmlSwitch">HTMLタグをカウントしない: </label>
     <input type="checkbox" id="htmlSwitch" />
     <script src="index.js" type="module"></script>
+    <script src="../shared/load-components.js"></script>
   </body>
 </html>
