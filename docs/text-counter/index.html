@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>文字数カウンター</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <h1>文字数カウンター</h1>
+    <textarea
+      id="inputText"
+      placeholder="ここにテキストを入力してください"
+      rows="10"
+    ></textarea>
+    <h2>現在の文字数</h3>
+    <ul>
+      <li>
+        空白と改行をふくむ文字数:
+        <strong id="countAll">0</strong>
+      </li>
+      <li>
+        空白と改行をのぞいた文字数:
+        <strong id="countChars">0</strong>
+      </li>
+      <li>
+        行数:
+        <strong id="countLines">1</strong>
+      </li>
+    </ul>
+    <label for="htmlSwitch">HTMLタグをカウントしない: </label>
+    <input type="checkbox" id="htmlSwitch" />
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
