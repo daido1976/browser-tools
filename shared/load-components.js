@@ -32,22 +32,11 @@ function loadCSS(url) {
 
 function mount() {
   document.addEventListener("DOMContentLoaded", function () {
-    const pjName = "browser-tools";
     const origin = window.location.origin;
-    const pathSegment = window.location.pathname.includes(pjName)
-      ? `/${pjName}`
-      : "";
-    const baseUrl = `${origin}${pathSegment}`;
-    loadHTML(
-      `${baseUrl}/shared/header.html`,
-      document.getElementById("header")
-    );
-    loadHTML(
-      `${baseUrl}/shared/footer.html`,
-      document.getElementById("footer")
-    );
-    loadCSS(`${baseUrl}/shared/header.css`);
-    loadCSS(`${baseUrl}/shared/footer.css`);
+    loadHTML(`${origin}/shared/header.html`, document.getElementById("header"));
+    loadHTML(`${origin}/shared/footer.html`, document.getElementById("footer"));
+    loadCSS(`${origin}/shared/header.css`);
+    loadCSS(`${origin}/shared/footer.css`);
   });
 }
 
