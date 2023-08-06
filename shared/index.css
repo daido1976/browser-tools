@@ -4,12 +4,15 @@ body {
   padding: 20px;
   max-width: 800px;
   margin: auto;
+  background-color: #f9f3e9;
+  color: #5f5c57;
 }
 
 h1 {
   text-align: center;
   font-size: x-large;
-  color: black;
+  color: #5f5c57;
+  margin: 2rem;
 }
 
 textarea {
@@ -33,12 +36,19 @@ ul {
 
 /* Header */
 .header-link {
-  color: darkblue;
   text-decoration: none;
 }
 
 header {
-  font-size: xx-large;
-  font-weight: bold;
   text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  padding: 1.2rem;
+  width: 240px;
+  margin: auto;
+  background-color: #ea967a;
+  border-radius: 5px;
+  box-shadow: #b3b3b3 3px 3px 5px 0px;
 }
