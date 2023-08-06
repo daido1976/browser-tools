@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/shared/index.css" />
     <title>browser tools</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px;
+      }
+
+      .link-item {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      .item {
+        background: lightgrey;
+        height: 150px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+
+      .link-item:hover .item {
+        background: darkgrey;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
