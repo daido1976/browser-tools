@@ -35,11 +35,16 @@ ul {
 }
 
 /* Header */
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
 .header-link {
   text-decoration: none;
 }
 
-header {
+.header-text {
   text-align: center;
   color: white;
   font-weight: bold;
@@ -47,7 +52,6 @@ header {
   letter-spacing: 1.2px;
   padding: 1.2rem;
   width: 240px;
-  margin: auto;
   background-color: #ea967a;
   border-radius: 5px;
   box-shadow: #b3b3b3 3px 3px 5px 0px;
