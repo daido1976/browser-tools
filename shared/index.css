@@ -1,0 +1,44 @@
+/* All */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: x-large;
+  color: black;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+p,
+ul {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Header */
+.header-link {
+  color: darkblue;
+  text-decoration: none;
+}
+
+header {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+}
