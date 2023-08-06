@@ -6,6 +6,7 @@ body {
   margin: auto;
   background-color: #f9f3e9;
   color: #5f5c57;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1 {
