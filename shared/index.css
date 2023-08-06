@@ -1,6 +1,8 @@
 /* All */
+/* NOTE: Google Fonts の読み込みは、パフォーマンス的な観点から本来は非同期読み込みの <link> 推奨だが、各 HTML ファイルに書くのが面倒なので @import している */
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap");
 body {
-  font-family: Arial, sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   padding: 1rem;
   max-width: 800px;
   margin: auto;
