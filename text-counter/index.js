@@ -7,11 +7,13 @@ function countCharacters(text, includeHTML) {
   const processedText = includeHTML ? text : text.replace(/<[^>]*>?/gm, "");
   const textNoSpaces = processedText.replace(/\s+/g, "");
   const lines = processedText.split(/\r*\n/);
+  const byteSize = new Blob([text]).size;
 
   return {
     allChars: processedText.length,
     charsWithoutSpaces: textNoSpaces.length,
     numberOfLines: lines.length,
+    byteSize,
   };
 }
 
@@ -28,19 +30,21 @@ function mount() {
   const countLines = /** @type {HTMLLIElement} */ (
     document.getElementById("countLines")
   );
+  const countByteSize = /** @type {HTMLLIElement} */ (
+    document.getElementById("countByteSize")
+  );
   const htmlSwitch = /** @type {HTMLInputElement} */ (
     document.getElementById("htmlSwitch")
   );
 
   const updateCounts = () => {
-    const { allChars, charsWithoutSpaces, numberOfLines } = countCharacters(
-      inputText.value,
-      htmlSwitch.checked
-    );
+    const { allChars, charsWithoutSpaces, numberOfLines, byteSize } =
+      countCharacters(inputText.value, htmlSwitch.checked);
 
     countAll.textContent = allChars.toString();
     countChars.textContent = charsWithoutSpaces.toString();
     countLines.textContent = numberOfLines.toString();
+    countByteSize.textContent = byteSize.toString();
   };
 
   inputText.addEventListener("input", updateCounts);
