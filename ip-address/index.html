@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/shared/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/shared/index.css" />
+    <title>IPアドレス確認| Browser tools</title>
+    <style>
+      .ip-address-container {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-container">
+      <a href="/" class="header-link">
+        <div class="header-text">Browser tools</div>
+      </a>
+    </header>
+    <!-- Header -->
+
+    <h1>IPアドレス確認</h1>
+    <div class="ip-address-container">
+      <p id="ipAddress">IPアドレスを読み込み中...</p>
+    </div>
+
+    <script src="/ip-address/index.js" type="module"></script>
+  </body>
+</html>
