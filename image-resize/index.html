@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/shared/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/shared/index.css" />
+    <title>画像リサイズツール | Browser tools</title>
+    <style>
+      .image-resize-container {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        gap: 1rem;
+      }
+
+      .drop-area {
+        border: 2px dashed #ccc;
+        padding: 1.5rem;
+        margin: 1.5rem;
+      }
+      .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+      .download-link {
+        display: block;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-container">
+      <a href="/" class="header-link">
+        <div class="header-text">Browser tools</div>
+      </a>
+    </header>
+    <!-- Header -->
+
+    <h1>画像リサイズ</h1>
+    <div class="image-resize-container">
+      <div class="drop-area" id="drop-area">
+        ここに画像ファイルをドラッグ＆ドロップ
+        <br />または
+        <input type="file" id="file-input" multiple />
+      </div>
+      <div>最大幅: <input type="number" id="max-width" value="1200" /> px</div>
+      <div>
+        <button class="btn" id="resize-btn">リサイズする</button>
+      </div>
+      <div id="download-links"></div>
+    </div>
+    <script src="/image-resize/index.js" type="module"></script>
+  </body>
+</html>
